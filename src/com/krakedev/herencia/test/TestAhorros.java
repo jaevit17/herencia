@@ -15,6 +15,7 @@ public class TestAhorros {
 		h.ahorrar(20);
 		h.imprimir();
 		Hijo hi=new Hijo(1,1,1);
+		hi.ahorrar(400);
 		hi.ahorrar(300);
 		hi.imprimir();
 

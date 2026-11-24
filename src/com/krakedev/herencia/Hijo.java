@@ -14,4 +14,8 @@ public class Hijo extends Padre{
 				" defectos: " + getDefectos()+"]";
 	}
 	
+	public void ahorrar(double monto) {
+		setTotalAhorrado(getTotalAhorrado()+(monto/2));
+	}
+	
 }
