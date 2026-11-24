@@ -38,6 +38,9 @@ public class Padre {
 	public void imprimir() {
 		System.out.println("Virtudes: "+getVirtudes());
 		System.out.println("Defectos: "+getDefectos());
+		System.out.println("Ahorros: "+totalAhorrado);
+		System.out.println("----------------------------");
+		
 	}
 	public void guardarSecreto() {
 		System.out.println("Esto no se hereda");
