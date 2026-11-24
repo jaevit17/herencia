@@ -1,8 +1,10 @@
 package com.krakedev.herencia;
 
 public class Padre {
+	//ATRIBUTOS
 	private int defectos;
 	private int virtudes;
+	private double totalAhorrado;
 	
 	//CONSTRUCTOR
 //	public Padre() {
@@ -12,7 +14,6 @@ public class Padre {
 		this.defectos=defectos;
 		this.virtudes=virtudes;
 	}
-	
 	
 	//GETTERS-SETTERS
 	public int getDefectos() {
@@ -27,6 +28,12 @@ public class Padre {
 	public void setVirtudes(int virtudes) {
 		this.virtudes = virtudes;
 	}
+	public double getTotalAhorrado() {
+		return totalAhorrado;
+	}
+	public void setTotalAhorrado(double totalAhorrado) {
+		this.totalAhorrado = totalAhorrado;
+	}
 	//METODOS
 	public void imprimir() {
 		System.out.println("Virtudes: "+getVirtudes());
@@ -38,7 +45,12 @@ public class Padre {
 	
 	@Override
 	public String toString() {
-		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + "]";
+		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes +
+				", totalAhorrado=" + totalAhorrado + "]";
+	}
+	
+	public void ahorrar(double monto){
+		totalAhorrado += monto;
 	}
 	
 }
