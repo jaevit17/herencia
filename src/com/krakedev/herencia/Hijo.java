@@ -3,9 +3,9 @@ package com.krakedev.herencia;
 public class Hijo extends Padre{
 	private int juguetes;
 	//CONSTRUCTOR
-	public Hijo(int virtudes,int defectos,int juguetes) {
+	public Hijo(String nombre,int virtudes,int defectos,int juguetes) {
 		this.juguetes=juguetes;
-		super(virtudes,defectos);
+		super(nombre,virtudes,defectos);
 	}
 	//METODOS
 	@Override

@@ -11,8 +11,8 @@ public class Hija extends Padre {
 		return "Defectos: "+getDefectos()+" Virtudes: "+getVirtudes();
 	}
 	
-	public Hija(int virtudes,int defectos) {
-		super(virtudes,defectos);
+	public Hija(String nombre,int virtudes,int defectos) {
+		super(nombre,virtudes,defectos);
 	}
 	
 }
